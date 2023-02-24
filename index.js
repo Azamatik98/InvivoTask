@@ -43,3 +43,12 @@ class BinarySearchTree {
     this.container.appendChild(nodeElement);
   }
 }
+
+const tree = new BinarySearchTree(document.getElementById("tree-container"));
+
+document.addEventListener("keydown", (event) => {
+  if (event.code === "Space") {
+    const value = Math.floor(Math.random() * 201) - 100;
+    tree.insert(value);
+  }
+});

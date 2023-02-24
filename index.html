@@ -34,17 +34,5 @@
     <div id="tree-container"></div>
 
     <script src="index.js"></script>
-    <script>
-      const tree = new BinarySearchTree(
-        document.getElementById("tree-container")
-      );
-
-      document.addEventListener("keydown", (event) => {
-        if (event.code === "Space") {
-          const value = Math.floor(Math.random() * 201) - 100;
-          tree.insert(value);
-        }
-      });
-    </script>
   </body>
 </html>
